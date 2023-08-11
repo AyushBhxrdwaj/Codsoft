@@ -1,0 +1,22 @@
+num1=float(input("Enter num1: "))
+num2=float(input("enter num2: "))
+print("select the operator: ")
+print("+")
+print("-")
+print("*")
+print("/")
+ope=input("operator: ")
+
+try:
+    if ope=="+":
+        print(num1+num2)
+    elif ope=="-":
+        print(num1-num2)
+    elif ope=="*":
+        print(num1*num2)
+
+    elif  ope=="/":
+        print(num1/num2)
+
+except ZeroDivisionError:
+    print("Cannot divide a number by 0")
